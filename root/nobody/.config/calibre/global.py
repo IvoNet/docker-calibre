@@ -48,7 +48,7 @@ swap_author_names = False
  
 # add formats to existing
 # Add new formats to existing book records
-add_formats_to_existing = False
+add_formats_to_existing = True
  
 # check for dupes on ctl
 # Check for duplicates when copying to another library
@@ -64,7 +64,7 @@ new_book_tags = cPickle.loads('\x80\x02]q\x01.')
  
 # mark new books
 # Mark newly added books. The mark is a temporary mark that is automatically removed when calibre is restarted.
-mark_new_books = False
+mark_new_books = True
  
 # saved searches
 # List of named saved searches

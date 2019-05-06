@@ -22,4 +22,6 @@ ENV APPNAME=$APP                               \
 COPY root/ /
 WORKDIR  /nobody/inbox
 EXPOSE 7777
-VOLUME ["/calibre-library", "/nobody/inbox"]
+VOLUME ["/calibre-library", \
+        "/nobody/inbox",    \
+        "/calibre-autoscan"]
