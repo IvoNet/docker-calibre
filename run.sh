@@ -21,7 +21,7 @@ docker run                                          \
     -it                                             \
     --rm                                            \
     --name $NAME-dev                                \
-    -v "${HOME}/calibre-library:/calibre-library"   \
+    -v "${HOME}/calibre-library1:/calibre-library"   \
     -v "${HOME}/calibre-autoscan:/calibre-autoscan" \
     -v "${HOME}/calibre-inbox:/nobody/inbox"        \
     -p ${CONTENT_SERVER_PORT}:7777                  \
