@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
 NAME=calibre
+CONTENT_SERVER_PORT=7777
 PORT=10002
 WAIT=3
 
 if [ ! "$(docker ps -q -f name=$NAME)" ]; then
-
-    [[ -z "$(brew ls --versions pulseaudio)" ]] && brew install pulseaudio
-    pulseaudio --kill 2>/dev/null
-    pulseaudio --load=module-native-protocol-tcp --exit-idle-time=-1 --daemon 2>/dev/null
-
     if [ "$(docker ps -aq -f status=exited -f name=$NAME)" ]; then
         echo "Starting existing $NAME container..."
         docker start $NAME
@@ -16,10 +12,14 @@ if [ ! "$(docker ps -q -f name=$NAME)" ]; then
         open http://localhost:$PORT
     else
         echo "Starting new $NAME container..."
-        docker run                                    \
-            -d                                        \
-            --name $NAME                              \
-            -p $PORT:32000                            \
+        docker run                                          \
+            -d                                              \
+            --name $NAME                                    \
+            -v "${HOME}/calibre-library:/calibre-library"   \
+            -v "${HOME}/calibre-autoscan:/calibre-autoscan" \
+            -v "${HOME}/calibre-inbox:/nobody/inbox"        \
+            -p ${CONTENT_SERVER_PORT}:7777                  \
+            -p ${PORT}:32000                                \
             ivonet/calibre
 
         sleep $WAIT
@@ -28,6 +28,5 @@ if [ ! "$(docker ps -q -f name=$NAME)" ]; then
 else
     echo "Stopping $NAME..."
     docker stop $NAME
-    pulseaudio --kill 2>/dev/null
 fi
 

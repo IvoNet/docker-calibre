@@ -7,7 +7,7 @@ RUN apt-get update -qq -y                      \
  && apt-get clean                              \
  && rm -rf /var/lib/apt/lists/*
 
-ARG APP=calibre
+ARG APP=Calibre
 ARG USERNAME=user
 ARG PASSWORD=secret
 ARG ADMIN_NAME=admin

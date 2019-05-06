@@ -10,7 +10,7 @@ versioning=false
 #OPTIONS="--no-cache --force-rm"
 #OPTIONS="--no-cache"
 #OPTIONS="--force-rm"
-OPTIONS="$OPTIONS --build-arg APP=calibre --build-arg ADMIN_NAME=calibreadmin --build-arg ADMIN_PASSWORD=secret --build-arg USERNAME=ivonet --build-arg PASSWORD=secret"
+OPTIONS="$OPTIONS --build-arg APP=Calibre --build-arg ADMIN_NAME=calibreadmin --build-arg ADMIN_PASSWORD=secret --build-arg USERNAME=ivonet --build-arg PASSWORD=secret"
 
 docker build ${OPTIONS} -t ivonet/${image}:latest .
 if [ "$?" -eq 0 ] && [ ${deploy} == "true" ]; then
