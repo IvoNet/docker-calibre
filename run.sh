@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 NAME=calibre
+CONTENT_SERVER_PORT=7777
 PORT=8080
 if [ ! -z $1 ]; then
    EP="--entrypoint bash"
@@ -21,6 +22,7 @@ docker run                                        \
     --rm                                          \
     --name $NAME                                  \
     -v "${HOME}/calibre-library:/calibre-library" \
+    -p ${CONTENT_SERVER_PORT}:7777                \
     -p ${PORT}:32000                              \
     $EP                                           \
     ivonet/calibre
