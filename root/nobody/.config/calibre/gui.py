@@ -52,7 +52,7 @@ column_map = cPickle.loads('\x80\x02]q\x01(U\x05titleq\x02U\x08ondeviceq\x03U\x0
  
 # autolaunch server
 # Automatically launch Content server on application startup
-autolaunch_server = False
+autolaunch_server = True
  
 # oldest news
 # Oldest news kept in database
