@@ -3,5 +3,6 @@
 while true;
 do
   # Your application startup here
-  echo TODO
+  /usr/bin/calibre
+  sleep 1
 done

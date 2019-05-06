@@ -5,16 +5,24 @@ if [ ! -z $1 ]; then
    EP="--entrypoint bash"
 fi
 
+killpulse() {
+    pulseaudio --kill 2>/dev/null
+    killall pulseaudio 2>/dev/null
+    rm -rf ~/.config/pulse 2>/dev/null
+    mkdir -p ~/.config/pulse 2>/dev/null
+}
+
 [[ -z "$(brew ls --versions pulseaudio)" ]] && brew install pulseaudio
-pulseaudio --kill 2>/dev/null
+killpulse
 pulseaudio --load=module-native-protocol-tcp --exit-idle-time=-1 --daemon 2>/dev/null
 
-docker run                           \
-    -it                              \
-    --rm                             \
-    --name $NAME                     \
-    -p ${PORT}:32000                 \
-    $EP                              \
+docker run                                        \
+    -it                                           \
+    --rm                                          \
+    --name $NAME                                  \
+    -v "${HOME}/calibre-library:/calibre-library" \
+    -p ${PORT}:32000                              \
+    $EP                                           \
     ivonet/calibre
 
-pulseaudio --kill 2>/dev/null
+killpulse
