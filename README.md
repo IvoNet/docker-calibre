@@ -1,6 +1,6 @@
 # calibre
 
-Web desktop application for Calibre ebook application
+Web desktop docker image for: Calibre
 
 # Usage
 
@@ -24,34 +24,10 @@ See `run.sh` and `calibre.sh` for examples on how to run the application.
 
 # Base image configurable settings
 
-## Base image variables
+Lots of things can be configured through the base image.
 
-These variables should be defined by yourself at startup or in your `Dockerfile` during the build
-to make the application look good and give yourself some control over the working. 
-
-| Variable name            | Description  | Default |
-| :----------------------- | :----------- | :------ |
-| APPNAME                  | the name of the guacamole connection | `DESKTOP_APPLICATION` of you have your own image but did not define a name and `eyes` if you are just testing the base image |
-| GUACAMOLE_ADMIN_USERNAME | the guacamole admin username if you log in with this user you can configure everything | `guacadmin` |
-| GUACAMOLE_ADMIN_PASSWORD | the guacamole admin password | `guacadmin` |
-| GUACAMOLE_USER_NAME      | a guacamole limited user with only access to the defined application | `guest` |
-| GUACAMOLE_USER_PASSWORD  | the password for the limited user | `secret` |
-
-## Base image - advanced variables
-
-Most of the time these variables do not need to be changed often unless you want to :-)
-
-| Variable name            | Description  | Default |
-| :----------------------- | :----------- | :------ |
-| WIDTH                    | the width of the screen displayed in the browser | `1920` |
-| HEIGHT                   | the height of the screen displayed in the browser | `1080` |
-| VNC_DEPTH                | specify the pixel depth in bits of the vnc desktop to be created. Options are 8, 15, 16 and 24. [doc](https://tigervnc.org/doc/Xvnc.html) | `24` |
-| VNC_DPI                  | the dots per inc for the vnc desktop | `96` |
-| USER_ID                  | the userid for the nobody user  | `99` |
-| GROUP_ID                 | the groupid for the nobody user | `100`|
-| DISPLAY                  | the display number used by openbox. This value probably does not need to be changed ever unless you get the following error message during startup `Openbox-Message: Failed to open the display from the DISPLAY environment variable.` then you might want to change it to `:0` or some such | `:1` |
-| SERVER_PORT              | the port on which tomcat (guacamole-client) will run. Note that if you overrule this you also overrule the exposed internal port. | `32000` |
-
+See repo [docker-web-gui-base](https://github.com/IvoNet/docker-web-gui-base/blob/master/README.md)
+for documentation on the base image.
 
 # For developers
 
