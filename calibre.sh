@@ -2,7 +2,7 @@
 NAME=calibre
 CONTENT_SERVER_PORT=7777
 PORT=10002
-WAIT=3
+WAIT=4
 
 if [ ! "$(docker ps -q -f name=$NAME)" ]; then
     if [ "$(docker ps -aq -f status=exited -f name=$NAME)" ]; then
