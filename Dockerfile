@@ -1,4 +1,4 @@
-FROM ivonet/web-gui-base:latest
+FROM ivonet/x11webui:latest
 LABEL maintainer="Ivo Woltring - @ivonet"
 
 RUN apt-get update -qq -y                      \
@@ -8,16 +8,11 @@ RUN apt-get update -qq -y                      \
  && rm -rf /var/lib/apt/lists/*
 
 ARG APP=Calibre
-ARG USERNAME=user
-ARG PASSWORD=secret
-ARG ADMIN_NAME=admin
-ARG ADMIN_PASSWORD=admin
+ARG USR=user
+ARG PWD=secret
 
 ENV APPNAME=$APP                               \
-    GUACAMOLE_ADMIN_USERNAME=$ADMIN_NAME       \
-    GUACAMOLE_ADMIN_PASSWORD=$ADMIN_PASSWORD   \
-    GUACAMOLE_USER_NAME=$USERNAME              \
-    GUACAMOLE_USER_PASSWORD=$PASSWORD
+    USERNAME=$USR
 
 COPY root/ /
 WORKDIR  /nobody/inbox

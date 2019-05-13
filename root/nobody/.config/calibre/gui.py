@@ -104,7 +104,7 @@ send_to_device_template_history = cPickle.loads('\x80\x02]q\x01.')
  
 # main search history
 # Search history for the main GUI
-main_search_history = cPickle.loads('\x80\x02]q\x01.')
+main_search_history = cPickle.loads('\x80\x02]q\x01(X#\x00\x00\x00series:"=Second Foundation Trilogy"q\x02X\x04\x00\x00\x00shipq\x03X\x1b\x00\x00\x00authors:"=Raymond E. Feist"q\x04X\x19\x00\x00\x00authors:"=Anne McCaffrey"q\x05X\x1d\x00\x00\x00series:"=Kate Daniels Series"q\x06X\x18\x00\x00\x00authors:"=Ilona Andrews"q\x07X\x0f\x00\x00\x00series:"=Doona"q\x08X\x1c\x00\x00\x00series:"=The Talents Series"q\tX#\x00\x00\x00series:"=The Iron Druid Chronicles"q\nX\x16\x00\x00\x00series:"=Harry Potter"q\x0bX\x1e\x00\x00\x00series:"=Dragonriders of Pern"q\x0cX\x0c\x00\x00\x00dragonflightq\rX&\x00\x00\x00authors:"=Anne McCaffrey" dragonflightq\x0eX\'\x00\x00\x00authors:"=Anne McCaffrey" dragon flightq\x0fX\x1f\x00\x00\x00authors:"=Anne McCaffrey"  shipq\x10X#\x00\x00\x00authors:"=Anne McCaffrey"  ship whoq\x11X\r\x00\x00\x00that returnedq\x12e.')
  
 # viewer search history
 # Search history for the e-book viewer

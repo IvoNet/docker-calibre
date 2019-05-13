@@ -20,7 +20,7 @@ if [ ! "$(docker ps -q -f name=$NAME)" ]; then
             -v "${HOME}/calibre-inbox:/nobody/inbox"        \
             -p ${CONTENT_SERVER_PORT}:7777                  \
             -p ${PORT}:32000                                \
-            ivonet/calibre
+            ivonet/$NAME
 
         sleep $WAIT
         open http://localhost:$PORT

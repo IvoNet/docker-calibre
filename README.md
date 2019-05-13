@@ -18,15 +18,15 @@ See `run.sh` and `calibre.sh` for examples on how to run the application.
 
 | Port number          | Description                                             |
 | :--------------------| :-------------------------------------------------------|
-| `7777`               | the web interface of of calibre runs here               |
 | `32000`              | the application runs here                               |
+| `7777`               | the web interface of of calibre runs here               |
 
 
 # Base image configurable settings
 
 Lots of things can be configured through the base image.
 
-See repo [docker-web-gui-base](https://github.com/IvoNet/docker-web-gui-base/blob/master/README.md)
+See repo [docker-x11webui](https://github.com/IvoNet/docker-x11webui/blob/master/README.md)
 for documentation on the base image.
 
 # For developers
