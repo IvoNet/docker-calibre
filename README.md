@@ -1,4 +1,4 @@
-# calibre
+# calibre ebook reader
 
 Web desktop docker image for: Calibre
 

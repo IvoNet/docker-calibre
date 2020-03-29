@@ -1,4 +1,4 @@
-FROM ivonet/x11webui:latest
+FROM ivonet/x11webui:1.1
 LABEL maintainer="Ivo Woltring - @ivonet"
 
 RUN apt-get update -qq -y                      \
