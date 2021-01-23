@@ -9,8 +9,8 @@
     null,
     "Edit Metadata",
     "Convert Books",
-    "Tweak ePub",
     "Remove Books",
+    "Tag Mapper",
     "Polish Books",
     null,
     "Generate Catalog",
@@ -23,6 +23,10 @@
   "auto_add_check_for_duplicates": true,
   "auto_add_path": "/calibre-autoscan",
   "automerge": "overwrite",
+  "basic_metadata_widget_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAADAAAA+wAAAWgAAAEZAf////8BAAAAAQA="
+  },
   "book_details_splitter_horizontal_state": [
     true,
     341
@@ -157,6 +161,10 @@
     "__class__": "bytearray",
     "__value__": "AdnQywACAAAAAAKmAAABIwAABMUAAAK2AAACpwAAATcAAATEAAACsQAAAAAAAAAAB4A="
   },
+  "edit-tag-mapper-rules-geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAIaAAABLAAABVEAAAKtAAACGwAAAUAAAAVQAAACqAAAAAAAAAAAB4AAAAIbAAABQAAABVAAAAKo"
+  },
   "filename_pattern_history": [
     "(?P<title>.+) - (?P<author>[^_]+)",
     "(?P<title>.+)",
@@ -176,7 +184,7 @@
     "__value__": "AdnQywACAAAAAAJ5AAAA0QAABPMAAAMHAAACegAAAOUAAATyAAADAgAAAAAAAAAAB4A="
   },
   "library_usage_stats": {
-    "/calibre-library": 12
+    "/calibre-library": 13
   },
   "manual_add_auto_convert": true,
   "metadata_single_gui_geom": {
@@ -185,7 +193,7 @@
   },
   "metasingle_window_geometry3": {
     "__class__": "bytearray",
-    "__value__": "AdnQywACAAAAAAAYAAAAAAAAB1MAAAQeAAAAGQAAABQAAAdSAAAEGQAAAAAAAAAAB4A="
+    "__value__": "AdnQywADAAAAAAAYAAAAAAAAB1MAAAQeAAAAGQAAABQAAAdSAAAEGQAAAAAAAAAAB4AAAAAZAAAAFAAAB1IAAAQZ"
   },
   "polish_settings": {
     "Polish": {
