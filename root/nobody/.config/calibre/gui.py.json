@@ -3,7 +3,7 @@
   "LRF_ebook_viewer_options": null,
   "asked_library_thing_password": false,
   "auto_download_cover": false,
-  "autolaunch_server": false,
+  "autolaunch_server": true,
   "column_map": [
     "title",
     "ondevice",
@@ -48,7 +48,7 @@
   "main_search_history": [],
   "main_window_geometry": {
     "__class__": "bytearray",
-    "__value__": "AdnQywADAAAAAAAAAAAAAAAAB38AAAQ3AAAAAAAAAAAAAAPzAAAC4wAAAAACAAAAB4AAAAAAAAAAAQAAB38AAAQ3"
+    "__value__": "AdnQywADAAAAAAAAAAAAAAAAB38AAAQ3AAAAAAAAABQAAAPzAAAC9wAAAAACAAAAB4AAAAAAAAAAAQAAB38AAAQ3"
   },
   "match_tags_type": "any",
   "new_version_notification": true,

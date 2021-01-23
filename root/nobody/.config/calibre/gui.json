@@ -17,6 +17,8 @@
     "Similar Books",
     "Pick Random Book",
     null,
+    "Connect Share",
+    null,
     "Preferences",
     "Restart"
   ],
@@ -184,7 +186,7 @@
     "__value__": "AdnQywACAAAAAAJ5AAAA0QAABPMAAAMHAAACegAAAOUAAATyAAADAgAAAAAAAAAAB4A="
   },
   "library_usage_stats": {
-    "/calibre-library": 13
+    "/calibre-library": 15
   },
   "manual_add_auto_convert": true,
   "metadata_single_gui_geom": {
