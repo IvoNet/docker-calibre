@@ -13,3 +13,5 @@ if [ ! -d /nobody/inbox ]; then
  mkdir /nobody-inbox
  chown nobody:users /calibre-autoscan
 fi
+
+export $(dbus-launch)
