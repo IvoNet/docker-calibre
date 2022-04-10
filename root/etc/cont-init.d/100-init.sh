@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bash
+#!/command/s6-env bash
 #set -x
 if [ ! -f /calibre-library/metadata.db ]; then
    echo "Initializing calibre-library..."

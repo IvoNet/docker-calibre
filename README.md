@@ -33,8 +33,15 @@ for documentation on the base image.
 
 ## Build 
 
-see `build.sh` for build instructions
+```shell
+make x86-callibre
+```
 
+or on an amd64/x86 machine
+
+```shell
+make release-intellij
+```
 
 ---
 # License
@@ -52,3 +59,6 @@ see `build.sh` for build instructions
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+NOTE that:
+- The usage of IntelliJ itself falls under their license of course.

@@ -1,4 +1,4 @@
-FROM ivonet/x11webui:1.2
+FROM ivonet/x11webui:2.0-20.04
 LABEL maintainer="Ivo Woltring - @ivonet"
 
 RUN apt-get update -qq -y                      \
@@ -11,7 +11,7 @@ RUN apt-get update -qq -y                      \
  && apt-get clean                              \
  && rm -rf /var/lib/apt/lists/*
 
-RUN wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/stdin version=5.10.1
+RUN wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/stdin
 
 ARG APP=Calibre
 ARG USR=user
