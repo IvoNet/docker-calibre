@@ -9,6 +9,7 @@ RUN apt-get update -qq -y                      \
         libqt5x11extras5 \
         libgl1-mesa-dri \
         libopengl0 \
+        libxcb-cursor0 \
  && apt-get clean                              \
  && rm -rf /var/lib/apt/lists/*
 
