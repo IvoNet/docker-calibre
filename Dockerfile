@@ -11,7 +11,7 @@ RUN apt-get update -qq -y                      \
  && apt-get clean                              \
  && rm -rf /var/lib/apt/lists/*
 
-RUN wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/stdin
+RUN wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
 
 ARG APP=Calibre
 ARG USR=user
