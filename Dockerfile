@@ -8,6 +8,7 @@ RUN apt-get update -qq -y                      \
         libqt5gui5 \
         libqt5x11extras5 \
         libgl1-mesa-dri \
+        libopengl0 \
  && apt-get clean                              \
  && rm -rf /var/lib/apt/lists/*
 
