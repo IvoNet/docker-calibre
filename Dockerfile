@@ -19,8 +19,9 @@ ARG APP=Calibre
 ARG USR=user
 ARG PWD=secret
 
-ENV APPNAME=$APP                               \
+ENV APPNAME=$APP \
     USERNAME=$USR \
+    PASSWORD=$PWD \
     LIBGL_ALWAYS_SOFTWARE=true
 
 COPY root/ /
